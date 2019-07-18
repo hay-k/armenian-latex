@@ -1,0 +1,55 @@
+%NOTE! compile with XeLaTeX
+\documentclass[a4paper]{article}
+
+%Հայերենի համար անհրաժեշտ բաղադրամասեր
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{armenian}
+\newfontfamily\armenianfont{GHEA Mariam}
+%\newfontfamily\armenianfont{GHEA Grapalat}
+%\newfontfamily\armenianfont{Arial Unicode}
+
+\sloppy
+\renewcommand{\contentsname}{Բովանդակություն} %որ contents-ի փոխարեն հայերեն գրի
+\renewcommand{\refname}{Գրականություն} %որ references-ի փոխարեն հայերեն գրի
+
+\usepackage{indentfirst} %էս էլ որ ամեն պարագրաֆ մի մատ խորքից գրի՝ հայերեն կանոներին համապատասխան
+
+
+\usepackage{amsmath}
+
+\title{Հայերեն Լատեխ}
+\author{Հայկ Սարգյան}
+\date{Ապրիլ 2016}
+
+
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Բաժին առաջին}
+\(\zeta_H(x;p)\)-ն Հուրվիցի զետա ֆունկցիան է, որը սահմանվում է հետևյալ կերպ \cite{book:elizalde_zeta}`
+%
+\begin{equation}
+\zeta_H(x;p)=\sum_{n=0}^{\infty}\frac{1}{(n+p)^x} \quad 0<p<1 \\
+\end{equation}
+%
+%
+\section{Բաժին երկրորդ}
+%
+Հուրվիցի զետա ֆունկցիան երբեմն սահմանում են նաև այսպես՝
+%
+\begin{equation}
+\zeta_H(x;p)=\sum_{n=1}^{\infty}\frac{1}{(n+p)^x} \quad 0<p<1 \\
+\end{equation}
+%
+
+\begin{thebibliography}{1}
+\bibitem{book:elizalde_zeta} E. Elizalde, S. D. Odintsov, A. Romeo, A. A. Bytsenko, and S. Zerbini, \emph{Zeta Regularization Techniques with Applications} (World Scientific, Singapore, 1994).
+
+
+\end{thebibliography}
+
+\end{document}
