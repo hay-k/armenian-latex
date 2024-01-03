@@ -20,7 +20,7 @@
 
 \title{Հայերեն Լատեխ}
 \author{Հայկ Սարգյան}
-\date{Ապրիլ 2016}
+\date{Հունվար 2024}
 
 
 
@@ -29,22 +29,39 @@
 \maketitle
 \tableofcontents
 
-\section{Բաժին առաջին}
-\(\zeta_H(x;p)\)-ն Հուրվիցի զետա ֆունկցիան է, որը սահմանվում է հետևյալ կերպ \cite{book:elizalde_zeta}`
+\section{Ռիմանի զետա ֆունկցիա}
+Ռիմանի զետա ֆունկցիան\footnote{Երբեմն անվանում են նաև Էյլեր-Ռիմանի զետա ֆունկցիա} կոմպլեքս փոփոխականի ֆունկցիա է, որը սահմանվում է հետևյալ կերպ՝
 %
 \begin{equation}
-\zeta_H(x;p)=\sum_{n=0}^{\infty}\frac{1}{(n+p)^x} \quad 0<p<1 \\
+\sum_{n=1}^\infty \frac{1}{n^s} = \frac{1}{1^s} + \frac{1}{2^s} + \frac{1}{3^s} + \cdots,
 \end{equation}
 %
 %
-\section{Բաժին երկրորդ}
-%
-Հուրվիցի զետա ֆունկցիան երբեմն սահմանում են նաև այսպես՝
+երբ \(\operatorname{Re}(s) > 1\), և այս շարքի անալիտիկ շարունակությամբ, երբ \(\operatorname{Re}(s) \leq 1\).  Ռիմանի զետա ֆունկցիան սովորաբար նշանակում են \(\zeta(s)\).
+
+\section{Հուրվիցի զետա ֆունկցիա}
+Հուրվիցի զետա ֆունկցիան Ռիմանի զետա ֆունկցիայի ընդհանրացում է։ Այն նշանակում են \(\zeta_H(s;p)\)։ Գրականության մեջ կարելի է հանդիպել իրարից մի փոքր տարբեր երկու սահմանումների։
+
+\subsection{Սահմանում}
+Հուրվիցի զետա ֆունկցիան սովորաբար սահմանվում է հետևյալ շարքի միջոցով \cite{book:elizalde_zeta}`
 %
 \begin{equation}
-\zeta_H(x;p)=\sum_{n=1}^{\infty}\frac{1}{(n+p)^x} \quad 0<p<1 \\
+\sum_{n=0}^{\infty}\frac{1}{(n+p)^s} \quad p \ne 0, -1, -2, \dots \\
 \end{equation}
 %
+%
+Նկատենք, որ \(\zeta(s) = \zeta_H(s;1)\)
+
+\subsection{Փոքր ինչ տարբեր սահմանում}
+%
+Հուրվիցի զետա ֆունկցիան երբեմն սահմանում են նաև հետևյալ շարքի միջոցով՝
+%
+\begin{equation}
+\sum_{n=1}^{\infty}\frac{1}{(n+p)^s} \quad p \ne -1, -2, \dots \\
+\end{equation}
+%
+%
+Նկատենք, որ այս դեպքում \(\zeta(s) = \zeta_H(s;0)\)
 
 \begin{thebibliography}{1}
 \bibitem{book:elizalde_zeta} E. Elizalde, S. D. Odintsov, A. Romeo, A. A. Bytsenko, and S. Zerbini, \emph{Zeta Regularization Techniques with Applications} (World Scientific, Singapore, 1994).
